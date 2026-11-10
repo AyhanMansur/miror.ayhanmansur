@@ -4,37 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Index of /</title>
-<style>
-:root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --line: #d2d2d7; --panel: #f5f5f7; --bg: #ffffff; --link: #0a66c2; --gh: #8250df; }
-@media (prefers-color-scheme: dark) {
-  :root { --fg: #f5f5f7; --muted: #a1a1a6; --line: #3a3a3c; --panel: #1c1c1e; --bg: #111113; --link: #64b5ff; --gh: #a371f7; }
-}
-html { font-size: clamp(13px, 0.35vw + 12px, 16px); }
-body { margin: 0; background: var(--bg); color: var(--fg); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-.wrap { box-sizing: border-box; width: 100%; max-width: 1600px; margin: 0 auto; padding: clamp(10px, 2vw, 24px); }
-h1 { font-size: 1.2em; margin: 0 0 0.8em; word-break: break-all; }
-.tools { display: flex; flex-wrap: wrap; gap: 0.6em; align-items: center; margin-bottom: 0.8em; }
-.tools input { flex: 1 1 16em; min-width: 0; padding: 0.5em 0.7em; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--fg); font: inherit; }
-.tools .count { color: var(--muted); white-space: nowrap; }
-.table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: 8px; }
-table { width: 100%; min-width: 58em; border-collapse: collapse; }
-th, td { padding: 0.5em 0.75em; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
-th { background: var(--panel); white-space: nowrap; position: sticky; top: 0; }
-th.sortable { cursor: pointer; user-select: none; }
-th.sortable:focus-visible { outline: 2px solid var(--link); outline-offset: -2px; }
-th[aria-sort="ascending"]::after { content: " \25B2"; }
-th[aria-sort="descending"]::after { content: " \25BC"; }
-td.num { text-align: right; white-space: nowrap; }
-td.date { white-space: nowrap; }
-td.hash { font-size: 0.9em; word-break: break-all; min-width: 26em; }
-a { color: var(--link); text-decoration: none; word-break: break-all; }
-a:hover { text-decoration: underline; }
-a.gh { color: var(--gh); font-size: 0.85em; margin-left: 0.4em; }
-tr.hidden { display: none; }
-tr:last-child td { border-bottom: none; }
-.empty td { color: var(--muted); }
-footer { margin-top: 0.8em; color: var(--muted); }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
@@ -55,82 +25,29 @@ footer { margin-top: 0.8em; color: var(--muted); }
 </thead>
 <tbody>
 <tr class="parent" data-name="" data-size="" data-date="" data-hash=""><td><a href="../">Parent directory</a></td><td class="num">-</td><td>-</td><td class="hash">-</td></tr>
-<tr data-name="sha256sums" data-size="146853" data-date="1792506762" data-hash="4c0d74ec88fcfec3ca93cf7046e5626d50d7abd62618cc210d7876eb3b2c842c"><td><a href="SHA256SUMS">SHA256SUMS</a></td><td class="num">143.4K</td><td class="date">2026-10-20 14:32</td><td class="hash">4c0d74ec88fcfec3ca93cf7046e5626d50d7abd62618cc210d7876eb3b2c842c</td></tr>
-<tr data-name="backhaul.sh" data-size="17634" data-date="0" data-hash="b8aac215cdf9a36569d99aa23f62d37ad22b49119c3befeb44a7bf08b763bf65"><td><a href="backhaul.sh">backhaul.sh</a><a class="gh" href="https://github.com/Azumi67/Backhaul_script" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">17.2K</td><td class="date">-</td><td class="hash">b8aac215cdf9a36569d99aa23f62d37ad22b49119c3befeb44a7bf08b763bf65</td></tr>
-<tr data-name="chatto-install.sh" data-size="17570" data-date="0" data-hash="669cc3190e88a4c62635ed246c138cab05d20a6f7e8044f863f458b856b76d2f"><td><a href="chatto-install.sh">chatto-install.sh</a><a class="gh" href="https://github.com/chattocorp/chatto" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">17.2K</td><td class="date">-</td><td class="hash">669cc3190e88a4c62635ed246c138cab05d20a6f7e8044f863f458b856b76d2f</td></tr>
-<tr data-name="easymesh.sh" data-size="31314" data-date="0" data-hash="80e7b8f7bac03e9cc06f998e871f679cf1fa709ecfc1f6dee4feb81592fab8bc"><td><a href="easymesh.sh">easymesh.sh</a><a class="gh" href="https://github.com/Musixal/Easy-Mesh" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">30.6K</td><td class="date">-</td><td class="hash">80e7b8f7bac03e9cc06f998e871f679cf1fa709ecfc1f6dee4feb81592fab8bc</td></tr>
-<tr data-name="easymesh_v2.sh" data-size="31314" data-date="0" data-hash="087397dc7ac6d265d0f07afe6ead7a2bf506fccd26200eaac52cdbd2eaba1a7e"><td><a href="easymesh_v2.sh">easymesh_v2.sh</a><a class="gh" href="https://github.com/Musixal/Easy-Mesh" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">30.6K</td><td class="date">-</td><td class="hash">087397dc7ac6d265d0f07afe6ead7a2bf506fccd26200eaac52cdbd2eaba1a7e</td></tr>
+<tr data-name="sha256sums" data-size="146853" data-date="1792506762" data-hash="4c0d74ec88fcfec3ca93cf7046e5626d50d7abd62618cc210d7876eb3b2c842c"><td><a href="SHA256SUMS" class="dl-link">SHA256SUMS</a></td><td class="num">143.4K</td><td class="date">2026-10-20 14:32</td><td class="hash">4c0d74ec88fcfec3ca93cf7046e5626d50d7abd62618cc210d7876eb3b2c842c</td></tr>
+<tr data-name="backhaul.sh" data-size="17634" data-date="0" data-hash="b8aac215cdf9a36569d99aa23f62d37ad22b49119c3befeb44a7bf08b763bf65"><td><a href="backhaul.sh" class="dl-link">backhaul.sh</a><a class="gh" href="https://github.com/Azumi67/Backhaul_script" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">17.2K</td><td class="date">-</td><td class="hash">b8aac215cdf9a36569d99aa23f62d37ad22b49119c3befeb44a7bf08b763bf65</td></tr>
+<tr data-name="chatto-install.sh" data-size="17570" data-date="0" data-hash="669cc3190e88a4c62635ed246c138cab05d20a6f7e8044f863f458b856b76d2f"><td><a href="chatto-install.sh" class="dl-link">chatto-install.sh</a><a class="gh" href="https://github.com/chattocorp/chatto" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">17.2K</td><td class="date">-</td><td class="hash">669cc3190e88a4c62635ed246c138cab05d20a6f7e8044f863f458b856b76d2f</td></tr>
+<tr data-name="easymesh.sh" data-size="31314" data-date="0" data-hash="80e7b8f7bac03e9cc06f998e871f679cf1fa709ecfc1f6dee4feb81592fab8bc"><td><a href="easymesh.sh" class="dl-link">easymesh.sh</a><a class="gh" href="https://github.com/Musixal/Easy-Mesh" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">30.6K</td><td class="date">-</td><td class="hash">80e7b8f7bac03e9cc06f998e871f679cf1fa709ecfc1f6dee4feb81592fab8bc</td></tr>
+<tr data-name="easymesh_v2.sh" data-size="31314" data-date="0" data-hash="087397dc7ac6d265d0f07afe6ead7a2bf506fccd26200eaac52cdbd2eaba1a7e"><td><a href="easymesh_v2.sh" class="dl-link">easymesh_v2.sh</a><a class="gh" href="https://github.com/Musixal/Easy-Mesh" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">30.6K</td><td class="date">-</td><td class="hash">087397dc7ac6d265d0f07afe6ead7a2bf506fccd26200eaac52cdbd2eaba1a7e</td></tr>
 <tr data-name="files/" data-size="-1" data-date="0" data-hash=""><td><a href="files/">files/</a></td><td class="num">-</td><td class="date">-</td><td class="hash">-</td></tr>
-<tr data-name="haproxy.sh" data-size="24273" data-date="0" data-hash="f5a7d84a6aa67f6988fceda3b8fe0eecc652bf08497d44c70ee8811560db2315"><td><a href="haproxy.sh">haproxy.sh</a><a class="gh" href="https://github.com/Musixal/HAProxy" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">23.7K</td><td class="date">-</td><td class="hash">f5a7d84a6aa67f6988fceda3b8fe0eecc652bf08497d44c70ee8811560db2315</td></tr>
-<tr data-name="jitsi-meet-install.sh" data-size="9373" data-date="0" data-hash="e26aa77fbfbdecc35530b7375662902dca4e0d55fe0555798f5b565a5ea80573"><td><a href="jitsi-meet-install.sh">jitsi-meet-install.sh</a><a class="gh" href="https://github.com/jitsi-contrib/installers" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">9.2K</td><td class="date">-</td><td class="hash">e26aa77fbfbdecc35530b7375662902dca4e0d55fe0555798f5b565a5ea80573</td></tr>
-<tr data-name="matrix-install.sh" data-size="31298" data-date="0" data-hash="f05baa71ef3d374729d8ca2071de2ae8d7c634e67e56195db9f10f5625083f2a"><td><a href="matrix-install.sh">matrix-install.sh</a><a class="gh" href="https://github.com/antwons/matrix-install" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">30.6K</td><td class="date">-</td><td class="hash">f05baa71ef3d374729d8ca2071de2ae8d7c634e67e56195db9f10f5625083f2a</td></tr>
-<tr data-name="pasarguard-node-install.sh" data-size="23285" data-date="0" data-hash="d9e04ba2993e823b23b55daf212289a23d1ca18ff351cfba3e3ac01445d65c1d"><td><a href="pasarguard-node-install.sh">pasarguard-node-install.sh</a><a class="gh" href="https://github.com/PasarGuard/scripts" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">22.7K</td><td class="date">-</td><td class="hash">d9e04ba2993e823b23b55daf212289a23d1ca18ff351cfba3e3ac01445d65c1d</td></tr>
-<tr data-name="pasarguard-panel-install.sh" data-size="35028" data-date="0" data-hash="82452b9740bb106c5da02751398423e8b63bdb12d6651ef9dd298afcfd8b38fa"><td><a href="pasarguard-panel-install.sh">pasarguard-panel-install.sh</a><a class="gh" href="https://github.com/PasarGuard/scripts" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">34.2K</td><td class="date">-</td><td class="hash">82452b9740bb106c5da02751398423e8b63bdb12d6651ef9dd298afcfd8b38fa</td></tr>
-<tr data-name="pingvin-share-x-install.sh" data-size="12240" data-date="0" data-hash="78ca6367e0404a9483269a17f184f922bf616c8ac93c9cd6ba00e78d8944576a"><td><a href="pingvin-share-x-install.sh">pingvin-share-x-install.sh</a><a class="gh" href="https://github.com/smp46/pingvin-share-x" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">12.0K</td><td class="date">-</td><td class="hash">78ca6367e0404a9483269a17f184f922bf616c8ac93c9cd6ba00e78d8944576a</td></tr>
-<tr data-name="rathole.sh" data-size="53136" data-date="0" data-hash="212b49ac1512c5e93d5f091712497c1320331af92722662aa8925ad561897b34"><td><a href="rathole.sh">rathole.sh</a><a class="gh" href="https://github.com/niiaco/rathole" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">51.9K</td><td class="date">-</td><td class="hash">212b49ac1512c5e93d5f091712497c1320331af92722662aa8925ad561897b34</td></tr>
-<tr data-name="rathole_v2.sh" data-size="55924" data-date="0" data-hash="3a50eed7810a5a935c12067beba4744d8be651f80371fdd020e47c1810c859c2"><td><a href="rathole_v2.sh">rathole_v2.sh</a><a class="gh" href="https://github.com/niiaco/rathole" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">54.6K</td><td class="date">-</td><td class="hash">3a50eed7810a5a935c12067beba4744d8be651f80371fdd020e47c1810c859c2</td></tr>
-<tr data-name="rebecca-binary.sh" data-size="242357" data-date="0" data-hash="5da8274ba6f9639fa86f8ef96a5abb958f8658d6d6551dea48cbed1a01a12809"><td><a href="rebecca-binary.sh">rebecca-binary.sh</a><a class="gh" href="https://github.com/rebeccapanel/Rebecca" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">236.7K</td><td class="date">-</td><td class="hash">5da8274ba6f9639fa86f8ef96a5abb958f8658d6d6551dea48cbed1a01a12809</td></tr>
-<tr data-name="rebecca-node-binary.sh" data-size="179448" data-date="0" data-hash="039869cc69ef792acb1727f4b44f749ab183c656d78d0785ca64fb76b90ae055"><td><a href="rebecca-node-binary.sh">rebecca-node-binary.sh</a><a class="gh" href="https://github.com/rebeccapanel/Rebecca" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">175.2K</td><td class="date">-</td><td class="hash">039869cc69ef792acb1727f4b44f749ab183c656d78d0785ca64fb76b90ae055</td></tr>
-<tr data-name="xui-install.sh" data-size="174333" data-date="0" data-hash="fe1e87527225479637c82fe2aa8dcb37de9e26beb03d81d8c0c101eccc5f4879"><td><a href="xui-install.sh">xui-install.sh</a><a class="gh" href="https://github.com/alireza0/x-ui" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">170.2K</td><td class="date">-</td><td class="hash">fe1e87527225479637c82fe2aa8dcb37de9e26beb03d81d8c0c101eccc5f4879</td></tr>
-<tr data-name="xui29-install.sh" data-size="145682" data-date="0" data-hash="ccbc25f98c329dbde0723fdd92ef79fd2564863bd6e6381c28eb551130c8acc5"><td><a href="xui29-install.sh">xui29-install.sh</a><a class="gh" href="https://github.com/alireza0/x-ui" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">142.3K</td><td class="date">-</td><td class="hash">ccbc25f98c329dbde0723fdd92ef79fd2564863bd6e6381c28eb551130c8acc5</td></tr>
+<tr data-name="haproxy.sh" data-size="24273" data-date="0" data-hash="f5a7d84a6aa67f6988fceda3b8fe0eecc652bf08497d44c70ee8811560db2315"><td><a href="haproxy.sh" class="dl-link">haproxy.sh</a><a class="gh" href="https://github.com/Musixal/HAProxy" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">23.7K</td><td class="date">-</td><td class="hash">f5a7d84a6aa67f6988fceda3b8fe0eecc652bf08497d44c70ee8811560db2315</td></tr>
+<tr data-name="jitsi-meet-install.sh" data-size="9373" data-date="0" data-hash="e26aa77fbfbdecc35530b7375662902dca4e0d55fe0555798f5b565a5ea80573"><td><a href="jitsi-meet-install.sh" class="dl-link">jitsi-meet-install.sh</a><a class="gh" href="https://github.com/jitsi-contrib/installers" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">9.2K</td><td class="date">-</td><td class="hash">e26aa77fbfbdecc35530b7375662902dca4e0d55fe0555798f5b565a5ea80573</td></tr>
+<tr data-name="matrix-install.sh" data-size="31298" data-date="0" data-hash="f05baa71ef3d374729d8ca2071de2ae8d7c634e67e56195db9f10f5625083f2a"><td><a href="matrix-install.sh" class="dl-link">matrix-install.sh</a><a class="gh" href="https://github.com/antwons/matrix-install" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">30.6K</td><td class="date">-</td><td class="hash">f05baa71ef3d374729d8ca2071de2ae8d7c634e67e56195db9f10f5625083f2a</td></tr>
+<tr data-name="pasarguard-node-install.sh" data-size="23285" data-date="0" data-hash="d9e04ba2993e823b23b55daf212289a23d1ca18ff351cfba3e3ac01445d65c1d"><td><a href="pasarguard-node-install.sh" class="dl-link">pasarguard-node-install.sh</a><a class="gh" href="https://github.com/PasarGuard/scripts" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">22.7K</td><td class="date">-</td><td class="hash">d9e04ba2993e823b23b55daf212289a23d1ca18ff351cfba3e3ac01445d65c1d</td></tr>
+<tr data-name="pasarguard-panel-install.sh" data-size="35028" data-date="0" data-hash="82452b9740bb106c5da02751398423e8b63bdb12d6651ef9dd298afcfd8b38fa"><td><a href="pasarguard-panel-install.sh" class="dl-link">pasarguard-panel-install.sh</a><a class="gh" href="https://github.com/PasarGuard/scripts" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">34.2K</td><td class="date">-</td><td class="hash">82452b9740bb106c5da02751398423e8b63bdb12d6651ef9dd298afcfd8b38fa</td></tr>
+<tr data-name="pingvin-share-x-install.sh" data-size="12240" data-date="0" data-hash="78ca6367e0404a9483269a17f184f922bf616c8ac93c9cd6ba00e78d8944576a"><td><a href="pingvin-share-x-install.sh" class="dl-link">pingvin-share-x-install.sh</a><a class="gh" href="https://github.com/smp46/pingvin-share-x" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">12.0K</td><td class="date">-</td><td class="hash">78ca6367e0404a9483269a17f184f922bf616c8ac93c9cd6ba00e78d8944576a</td></tr>
+<tr data-name="rathole.sh" data-size="53136" data-date="0" data-hash="212b49ac1512c5e93d5f091712497c1320331af92722662aa8925ad561897b34"><td><a href="rathole.sh" class="dl-link">rathole.sh</a><a class="gh" href="https://github.com/niiaco/rathole" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">51.9K</td><td class="date">-</td><td class="hash">212b49ac1512c5e93d5f091712497c1320331af92722662aa8925ad561897b34</td></tr>
+<tr data-name="rathole_v2.sh" data-size="55924" data-date="0" data-hash="3a50eed7810a5a935c12067beba4744d8be651f80371fdd020e47c1810c859c2"><td><a href="rathole_v2.sh" class="dl-link">rathole_v2.sh</a><a class="gh" href="https://github.com/niiaco/rathole" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">54.6K</td><td class="date">-</td><td class="hash">3a50eed7810a5a935c12067beba4744d8be651f80371fdd020e47c1810c859c2</td></tr>
+<tr data-name="rebecca-binary.sh" data-size="242357" data-date="0" data-hash="5da8274ba6f9639fa86f8ef96a5abb958f8658d6d6551dea48cbed1a01a12809"><td><a href="rebecca-binary.sh" class="dl-link">rebecca-binary.sh</a><a class="gh" href="https://github.com/rebeccapanel/Rebecca" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">236.7K</td><td class="date">-</td><td class="hash">5da8274ba6f9639fa86f8ef96a5abb958f8658d6d6551dea48cbed1a01a12809</td></tr>
+<tr data-name="rebecca-node-binary.sh" data-size="179448" data-date="0" data-hash="039869cc69ef792acb1727f4b44f749ab183c656d78d0785ca64fb76b90ae055"><td><a href="rebecca-node-binary.sh" class="dl-link">rebecca-node-binary.sh</a><a class="gh" href="https://github.com/rebeccapanel/Rebecca" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">175.2K</td><td class="date">-</td><td class="hash">039869cc69ef792acb1727f4b44f749ab183c656d78d0785ca64fb76b90ae055</td></tr>
+<tr data-name="xui-install.sh" data-size="174333" data-date="0" data-hash="fe1e87527225479637c82fe2aa8dcb37de9e26beb03d81d8c0c101eccc5f4879"><td><a href="xui-install.sh" class="dl-link">xui-install.sh</a><a class="gh" href="https://github.com/alireza0/x-ui" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">170.2K</td><td class="date">-</td><td class="hash">fe1e87527225479637c82fe2aa8dcb37de9e26beb03d81d8c0c101eccc5f4879</td></tr>
+<tr data-name="xui29-install.sh" data-size="145682" data-date="0" data-hash="ccbc25f98c329dbde0723fdd92ef79fd2564863bd6e6381c28eb551130c8acc5"><td><a href="xui29-install.sh" class="dl-link">xui29-install.sh</a><a class="gh" href="https://github.com/alireza0/x-ui" target="_blank" rel="noopener">[GitHub]</a></td><td class="num">142.3K</td><td class="date">-</td><td class="hash">ccbc25f98c329dbde0723fdd92ef79fd2564863bd6e6381c28eb551130c8acc5</td></tr>
 </tbody>
 </table>
 </div>
 <footer>18 items &middot; 1.2M in files</footer>
 </div>
-<script>
-(function () {
-  var table = document.getElementById("listing");
-  var tbody = table.tBodies[0];
-  var filter = document.getElementById("filter");
-  var count = document.getElementById("count");
-  var heads = table.tHead.rows[0].cells;
-  var parent = tbody.rows[0];
-  var rows = Array.prototype.slice.call(tbody.rows, 1);
-  var col = "name", dir = 1;
-  function key(tr) {
-    var v = tr.dataset[col === "name" ? "name" : col];
-    return col === "size" || col === "date" ? Number(v || 0) : (v || "");
-  }
-  function sortRows() {
-    rows.sort(function (a, b) {
-      var x = key(a), y = key(b);
-      if (x < y) return -dir;
-      if (x > y) return dir;
-      return a.dataset.name < b.dataset.name ? -1 : 1;
-    });
-    rows.forEach(function (tr) { tbody.appendChild(tr); });
-    applyFilter();
-  }
-  function applyFilter() {
-    var q = filter.value.trim().toLowerCase();
-    var shown = 0;
-    rows.forEach(function (tr) {
-      var ok = !q || tr.dataset.name.indexOf(q) !== -1 || tr.dataset.hash.indexOf(q) !== -1;
-      tr.classList.toggle("hidden", !ok);
-      if (ok) shown++;
-    });
-    count.textContent = shown + (shown === 1 ? " item" : " items") + (q ? " of " + rows.length : "");
-  }
-  function setSort(th) {
-    var c = th.dataset.col;
-    dir = col === c ? -dir : 1;
-    col = c;
-    Array.prototype.forEach.call(heads, function (h) { h.removeAttribute("aria-sort"); });
-    th.setAttribute("aria-sort", dir === 1 ? "ascending" : "descending");
-    sortRows();
-  }
-  Array.prototype.forEach.call(heads, function (th) {
-    if (!th.classList.contains("sortable")) return;
-    th.addEventListener("click", function () { setSort(th); });
-    th.addEventListener("keydown", function (e) {
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSort(th); }
-    });
-  });
-  filter.addEventListener("input", applyFilter);
-  sortRows();
-  if (parent) parent.classList.remove("hidden");
-})();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
