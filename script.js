@@ -7,10 +7,12 @@
   var parent = tbody.rows[0];
   var rows = Array.prototype.slice.call(tbody.rows, 1);
   var col = "name", dir = 1;
+
   function key(tr) {
     var v = tr.dataset[col === "name" ? "name" : col];
     return col === "size" || col === "date" ? Number(v || 0) : (v || "");
   }
+
   function sortRows() {
     rows.sort(function (a, b) {
       var x = key(a), y = key(b);
@@ -21,6 +23,7 @@
     rows.forEach(function (tr) { tbody.appendChild(tr); });
     applyFilter();
   }
+
   function applyFilter() {
     var q = filter.value.trim().toLowerCase();
     var shown = 0;
@@ -31,6 +34,7 @@
     });
     count.textContent = shown + (shown === 1 ? " item" : " items") + (q ? " of " + rows.length : "");
   }
+
   function setSort(th) {
     var c = th.dataset.col;
     dir = col === c ? -dir : 1;
@@ -39,6 +43,7 @@
     th.setAttribute("aria-sort", dir === 1 ? "ascending" : "descending");
     sortRows();
   }
+
   Array.prototype.forEach.call(heads, function (th) {
     if (!th.classList.contains("sortable")) return;
     th.addEventListener("click", function () { setSort(th); });
@@ -46,7 +51,36 @@
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSort(th); }
     });
   });
+
   filter.addEventListener("input", applyFilter);
+
+  // Force download for .sh / SHA256SUMS links via Blob
+  document.querySelectorAll("a.dl-link").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      var href = this.getAttribute("href");
+      fetch(href)
+        .then(function (res) {
+          if (!res.ok) throw new Error(res.status);
+          return res.blob();
+        })
+        .then(function (blob) {
+          var url = URL.createObjectURL(blob);
+          var temp = document.createElement("a");
+          temp.href = url;
+          temp.download = href.split("/").pop();
+          document.body.appendChild(temp);
+          temp.click();
+          document.body.removeChild(temp);
+          URL.revokeObjectURL(url);
+        })
+        .catch(function () {
+          // fallback: open directly
+          window.location.href = href;
+        });
+    });
+  });
+
   sortRows();
   if (parent) parent.classList.remove("hidden");
 })();
